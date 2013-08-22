@@ -248,7 +248,8 @@ public abstract class StreamSequence
 
     // filled last unit if = 0
     int filledLastUnit = dna.length & 0x0001;
-    byte currByte;
+    byte currByte = 0;
+    /*
     if(bit_shift != 0)
     {
 //    System.out.println("Bit Shifty..."+offset);
@@ -262,6 +263,7 @@ public abstract class StreamSequence
     }
     else 
       currByte = 0; 
+      */
 
     for(int i=bytePointer; i<numBytes+offsetSize; i++) 
     {
